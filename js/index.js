@@ -4,6 +4,7 @@ const welcome = document.querySelector('.intro h2')
 const image = document.getElementsByTagName('img')
 const destinations = document.querySelectorAll('.destination p')
 const body = document.querySelector('body')
+const stopLinks = document.querySelector('a')
 
 window.addEventListener('load', () => {
     alert('welcome');
@@ -50,4 +51,9 @@ destinations.forEach(destination => {
 
 document.addEventListener('scroll', (event) => {
         image[3].style.transform = 'rotate(180deg)';
+})
+
+stopLinks.addEventListener('click', (event) => {
+    event.preventDefault();
+    console.log('stopped the link')
 })
