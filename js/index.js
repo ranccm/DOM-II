@@ -21,7 +21,7 @@ logo.addEventListener('mouseleave', () => {
     logo.style.transform = 'scale(1)';
 })
 
-logo.addEventListener('dblclick', (event) =>
+logo.addEventListener('dblclick', () =>
     logo.textContent = 'Not So Fun Bus'
 )
 
